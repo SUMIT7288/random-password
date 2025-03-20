@@ -3,17 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>random password</title>
+    <title>Random Password</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>generate<br> <span>password</h1></span></h1>
+        <h1>generate<br> <span>password</span></h1>
         <div class="display">
             <input type="text" id="password" placeholder="password">
-            <img src="rpg_img/images/copy.png">
+            <img src="rpg_img/images/copy.png" onclick="copypassword()" alt="Copy password">
         </div>
-        <button><img src="rpg_img/images/generate.png">password</button>
+        <button onclick="createpassword()">
+            <img src="rpg_img/images/generate.png" alt="Generate password"> password
+        </button>
     </div>
     <script src="script.js"></script>
 </body>
